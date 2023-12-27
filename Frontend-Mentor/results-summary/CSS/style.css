@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100dvh;
+    font-family: 'Hanken Grotesk', sans-serif;
+      
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px 12px hsla(221, 100%, 96%, 0.6);
+}
+
+.card_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+    padding-bottom: 10px;
+}
+
+
+.round_box {
+    
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, hsla(256, 72%, 46%, 0.7), hsla(241, 72%, 46%, 0));
+}
+
+h1{
+    color: hsl(221, 100%, 96%);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.5rem;
+    opacity: 75%;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.circle_header{
+    color: white;
+    font-size: 70px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.circle_text{
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: hsl(221, 100%, 96%);
+    opacity: 50%;
+}
+
+.card_bottom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_left_text{
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card_left_parapgraph{
+    color: hsl(221, 100%, 96%);
+    opacity: 50%;
+    margin-top: 10px;
+    text-align: center;
+    width: 220px;
+}
+
+.card_right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -30px;
+}
+
+.stats_container{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   margin-top: 20px;
+}
+
+.stats_box1{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
+    justify-content: space-between;
+    background-color: hsla(0, 100%, 67%, 0.1);
+    height: 50px;
+}
+.stats_box2{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
+    justify-content: space-between;
+    background-color: hsl(39, 100%, 56%, 0.1);
+    height: 50px;
+}
+.stats_box3{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
+    justify-content: space-between;
+    background-color: hsl(166, 100%, 37%, 0.1);
+    height: 50px;
+}
+.stats_box4{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
+    justify-content: space-between;
+    background-color: hsl(234, 85%, 45%, 0.1);
+    height: 50px;
+}
+
+.stats_box_left{
+    display: flex;
+}
+
+.stats_box_right{
+    display: flex;
+}
+
+.stats_header_box{
+display: flex;
+justify-content: flex-start;
+width: 280px;
+}
+
+.stats_header{
+    color : hsl(224, 30%, 27%);
+    opacity: 80%;
+}
+
+.stats_title1{
+    color: hsl(0, 100%, 67%);
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.stats_title2{
+    color: hsl(39, 100%, 56%);
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.stats_title3{
+    color: hsl(166, 100%, 37%);
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.stats_title4{
+    color: hsl(234, 85%, 45%);
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 280px;
+    height: 50px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    border: 0;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.section-card{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width : 375px) {
+    .card{
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .card_right{
+        width: 100%;
+        padding: 0px;
+    }
+}
